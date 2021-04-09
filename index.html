@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body onload="loadQuestion()">
+    <script src="script.js"></script>
+    <div class="container">
+      <h1>Online Quiz System &copy</h1>
+      <form action="myform">
+        <label id="mylabel">Question</label>
+        <br />
+        <input
+          type="button"
+          value="option1"
+          name="opt1"
+          id="op1"
+          onclick="checkAnswer(id,1)"
+        />
+        <br />
+        <input
+          type="button"
+          value="option2"
+          name="opt2"
+          id="op2"
+          onclick="checkAnswer(id,2)"
+        />
+        <br />
+        <input
+          type="button"
+          value="option3"
+          name="opt3"
+          id="op3"
+          onclick="checkAnswer(id,3)"
+        />
+        <br />
+        <input
+          type="button"
+          value="option4"
+          name="opt4"
+          id="op4"
+          onclick="checkAnswer(id,4)"
+        />
+        <br />
+        <input
+          id="btn"
+          type="button"
+          value="Next"
+          name="nextbtn"
+          onclick="changeQuestion()"
+        />
+        <br />
+      </form>
+    </div>
+  </body>
+</html>
